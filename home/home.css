@@ -325,134 +325,143 @@ section.topo-site {
   }
 }
 
-/*QUIZ */
-
-.quiz{
-
-  height: 118vh;
+/* QUIZ */
+.quiz {
   background-color: #fff;
+  min-height: 100vh; /* altura mínima, expande conforme necessário */
+  padding-top: 60px;
+
 }
 
-.titulo-quiz{
-
-  color: #000000;
+.titulo-quiz {
+  color: #000;
   font-size: 50px;
   text-align: center;
   margin-bottom: 50px;
   cursor: default;
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
 }
 
-.txt-quiz{
-
+.txt-quiz {
   text-align: justify;
   color: #050506;
-
-  font-family: poppins;
- 
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-size: 20px;
   margin-bottom: 60px;
 }
 
-@media (max-width: 768px) {
-
-  .quiz{
-
-    height: 85vh;
-    background-color: #fff;
-  }
-
-  .titulo-quiz{
-
-    color: #000000;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 50px;
-    cursor: default;
-    font-family: poppins;
-  }
-  
-  .txt-quiz{
-  
-    text-align: justify;
-    color: #050506;
-    font-family: poppins;
-    line-height: 1.5;
-    font-size: 10px;
-    margin-inline: 10px;
-    margin-bottom: 60px;
-  }
- 
+.btn-quiz {
+  background-color: #ffc800;
+  color: #000000;
+  padding: 0.6em 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
-/*videoaula*/videoaula
 
-.videoaula{
-
-  height: 118vh;
-  background-color: #050506;
-}
-
-.titulo-videoaula{
-
+.btn-quiz:hover {
+  background-color: #000000;
   color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .btn-quiz,
+  .btn-videoaula {
+    font-size: 0.9rem;
+    padding: 0.5em 1.2em;
+  }
+
+  .titulo-quiz {
+    font-size: 30px;
+  }
+
+  .txt-quiz {
+    font-size: 14px;
+    margin-inline: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-quiz,
+  .btn-videoaula {
+    font-size: 0.85rem;
+    padding: 0.4em 1em;
+  }
+}
+/*videoaula*/
+
+.btn-videoaula {
+  background-color: #ffc800;
+  color: #000000;
+  padding: 0.6em 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.btn-videoaula:hover {
+  background-color: #ffffff;
+  color: #c59a00;
+}
+
+.videoaula {
+  background-color: #050506;
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.titulo-videoaula {
+  color: #fff;
   font-size: 50px;
   text-align: center;
   margin-bottom: 50px;
   cursor: default;
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
 }
 
-.txt-videoaula{
-
+.txt-videoaula {
   text-align: justify;
-  color: #ffffff;
-
-  font-family: poppins;
- 
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-size: 20px;
   margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
-
-  .videoaula{
-
-    height: 85vh;
-    background-color: #050506;
-  }
-
-  .titulo-videoaula{
-
-    color: #ffffff;
+  .titulo-videoaula {
     font-size: 30px;
-    text-align: center;
-    margin-bottom: 50px;
-    cursor: default;
-    font-family: poppins;
   }
-  
-  .txt-videoaula{
-  
-    text-align: justify;
-    color: #ffffff;
-    font-family: poppins;
-    line-height: 1.5;
-    font-size: 10px;
+
+  .txt-videoaula {
+    font-size: 14px;
     margin-inline: 10px;
-    margin-bottom: 60px;
   }
- 
 }
 
-/*VIDEOAULA*/
+/*MAPA*/
 
 
 .highlight-title {
   color: #ffc800; /* Amarelo vibrante */
   font-weight: 700;
+  font-family: poppins;
 }
 
 .btn-yellow {
@@ -470,11 +479,12 @@ section.topo-site {
 }
 
 .video-box {
-  background-color: #0a0a0a;
+
   
   padding: 10px;
   border-radius: 10px;
-  height: 300;
+  height: 430;
+  
 }
 
 .custom-title {
@@ -486,4 +496,10 @@ section.topo-site {
   .custom-title {
     font-size: 1.8rem;
   }
+}
+
+.txt-mapa{
+
+  color: #ffffff;
+  text-align: justify;
 }
