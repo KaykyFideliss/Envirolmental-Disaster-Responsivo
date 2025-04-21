@@ -15,3 +15,12 @@ Desenvolvido com foco em design moderno, responsividade e boas práticas de HTML
 - CSS3
 - JavaScript Vanilla
 - VS Code
+
+## 📷 Capturas de Tela
+*(adicione prints futuramente ou GIFs mostrando o site em ação)*
+
+## 💡 Como usar
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/Fidelis74/Envirolmental-Disaster-Responsivo.git
