@@ -1,0 +1,489 @@
+/*POPPINS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Estilo da barra de rolagem para WebKit browsers */
+::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  
+}
+
+::-webkit-scrollbar-thumb {
+background: #ffc800;
+
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 10px;
+ 
+}
+
+
+body{
+    overflow-x: hidden; /* Evita rolagem horizontal */
+      background-color: #050506 !important;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+      margin: 0; /* Remove margens padrão */
+      --default-blue-stroke: #4CAF50;
+      --default-grey-black-fill: #525252;
+      --default-strok: rgb(141, 141, 141);
+  
+  }
+
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* remove delay de animação */
+}
+.navbar, .nav-link, .dropdown-menu {
+  border-radius: 0 !important;
+  background-color: #050506 !important;
+
+}
+
+.dropdown-item{
+  font-family: poppins;
+  color: #ffc800;
+}
+
+ .dropdown-item:hover{
+  background-color: #ffc800 !important;
+  color: #050506 !important;
+
+}
+
+/*FINAL NAVBAR*/
+/* IMAGEM TOPO DO SITE --------------------------------------------------------------------------------------*/
+.img-principal-div {
+  position: relative;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  width: 100vw;  /* Largura da viewport */
+  height: 100vh; /* Altura da viewport */
+}
+
+/* Imagem principal com o degradê */
+.img-principal-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(5, 5, 6, 0.3), #050506); /* Degradê mais escuro */
+  z-index: 1; /* Coloca o degradê acima da imagem */
+}
+
+.img-principal {
+  width: 100vw;  /* Largura total da viewport */
+  height: 100vh; /* Altura total da viewport */
+  object-fit: cover; /* Garante que a imagem cubra toda a área */
+  display: block;
+  position: relative;
+  z-index: 0; /* Coloca a imagem abaixo do degradê */
+}
+
+/* Texto sobreposto na imagem */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffc800; /* Cor amarela */
+  text-align: center;
+  z-index: 2; /* Garante que o texto esteja acima do degradê */
+  cursor: default;
+}
+
+/* Título principal */
+.main-title {
+  font-size: 150px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffc800; /* Cor amarela */
+  letter-spacing: 20px;
+  white-space: nowrap;
+  z-index: 3; /* Garantir que o texto esteja acima de todos */
+}
+
+/* Subtítulo */
+.subtitle {
+  z-index: 3; /* Garantir que o texto esteja acima de todos */
+  font-size: 25 px;
+  letter-spacing: 10px;
+  color: #ffc800; /* Cor amarela */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* IMAGEM TOPO DO SITE --------------------------------------------------------------------------------------*/
+
+.nav-fixa{
+
+  display: block;
+}
+
+section.topo-site {
+  padding: 60px 0;
+  background-color: #050506; /* exemplo de fundo */
+}
+
+.txt-topo-site h1 {
+  font-family: Poppins, sans-serif;
+  color: #FFC700;
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.txt-topo-site p {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.btn-nos {
+  padding: 12px 30px !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  background-color: #FFC700 !important;
+  border: none !important;
+  border-radius: 30px !important;
+  transition: 0.3s ease !important;
+  font-family: poppins;
+  align-items: center !important;
+}
+
+.btn-nos:hover {
+  background-color: #ffffff !important;
+  color: #000 !important
+}
+
+/* Imagem com efeito flutuar */
+.img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* Container do texto digitando */
+.container.titulo-home {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.container .text {
+  position: relative;
+  color: #FFC700;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+
+.container .text.first-text {
+  color: #FFF;
+  padding-right: 10px;
+}
+
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #050506;
+  border-left: 2px solid #ffc800;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%, 60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+/*CARROSEL*/
+.section-aprenda-mais {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tittle-home {
+  color: #ffc800;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+  cursor: default;
+}
+
+.slidermais {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  user-select: none;
+  gap: 5vw;
+  width: 330vw; /* Garante espaço pra 3 slides */
+  transition: transform 0.3s ease;
+}
+
+.slide-mais {
+  flex: 0 0 100vw; /* Cada card ocupa 90% da largura da tela */
+  max-width: 90vw;
+  height: 500px;
+  position: relative;
+}
+
+
+
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.slide-mais:hover img {
+  filter: blur(4px);
+}
+
+.text-aprenda-mais {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+}
+
+.text-aprenda-mais h2 {
+  font-size: 20rem;
+}
+
+.text-aprenda-mais a {
+ 
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 3rem;
+  font-family: poppins;
+}
+
+.text-aprenda-mais a:hover {
+  color: #ffc800;
+}
+
+
+
+@media (max-width: 768px) {
+  .slide-mais {
+    flex: 0 0 80vw;
+  }
+
+  .tittle-home {
+    font-size: 24px;
+  }
+
+  .text-aprenda-mais h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-aprenda-mais a {
+ 
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 2rem;
+    font-family: poppins;
+  }
+}
+
+/*QUIZ */
+
+.quiz{
+
+  height: 118vh;
+  background-color: #fff;
+}
+
+.titulo-quiz{
+
+  color: #000000;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  cursor: default;
+  font-family: poppins;
+}
+
+.txt-quiz{
+
+  text-align: justify;
+  color: #050506;
+
+  font-family: poppins;
+ 
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+
+  .quiz{
+
+    height: 85vh;
+    background-color: #fff;
+  }
+
+  .titulo-quiz{
+
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    cursor: default;
+    font-family: poppins;
+  }
+  
+  .txt-quiz{
+  
+    text-align: justify;
+    color: #050506;
+    font-family: poppins;
+    line-height: 1.5;
+    font-size: 10px;
+    margin-inline: 10px;
+    margin-bottom: 60px;
+  }
+ 
+}
+
+/*videoaula*/videoaula
+
+.videoaula{
+
+  height: 118vh;
+  background-color: #050506;
+}
+
+.titulo-videoaula{
+
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  cursor: default;
+  font-family: poppins;
+}
+
+.txt-videoaula{
+
+  text-align: justify;
+  color: #ffffff;
+
+  font-family: poppins;
+ 
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+
+  .videoaula{
+
+    height: 85vh;
+    background-color: #050506;
+  }
+
+  .titulo-videoaula{
+
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    cursor: default;
+    font-family: poppins;
+  }
+  
+  .txt-videoaula{
+  
+    text-align: justify;
+    color: #ffffff;
+    font-family: poppins;
+    line-height: 1.5;
+    font-size: 10px;
+    margin-inline: 10px;
+    margin-bottom: 60px;
+  }
+ 
+}
+
+/*VIDEOAULA*/
+
+
+.highlight-title {
+  color: #ffc800; /* Amarelo vibrante */
+  font-weight: 700;
+}
+
+.btn-yellow {
+  background-color: #ffc800 !important;
+  color: #000;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #e6b800;
+  color: #000;
+}
+
+.video-box {
+  background-color: #0a0a0a;
+  
+  padding: 10px;
+  border-radius: 10px;
+  height: 300;
+}
+
+.custom-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .custom-title {
+    font-size: 1.8rem;
+  }
+}
