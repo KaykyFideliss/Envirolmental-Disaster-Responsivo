@@ -48,7 +48,7 @@ body{
 }
 .dropdown-item{
   font-family: poppins;
-  color: #ffc800;
+  color: #ffc800 !important;
 }
 
  .dropdown-item:hover{
@@ -70,7 +70,7 @@ body{
 }
 /*DROPDOWN PRETO */
 .navbar .dropdown-menu {
-  background-color: #fff; /* ou #050506 se quiser seguir a navbar escura */
+  background-color: #050506; /* ou #050506 se quiser seguir a navbar escura */
   color: #000;
 }
 
@@ -150,7 +150,6 @@ body{
 /* IMAGEM TOPO DO SITE --------------------------------------------------------------------------------------*/
 
 .nav-fixa{
-
   display: block;
 }
 
@@ -208,6 +207,18 @@ section.topo-site {
     top: 30px;
   }
 }
+
+.env-text {
+  font-size: 2rem; /* tamanho padrão */
+  transition: font-size 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .env-text {
+    font-size: 1.2rem; /* menor no mobile */
+  }
+}
+
 
 /* Container do texto digitando */
 .container.titulo-home {

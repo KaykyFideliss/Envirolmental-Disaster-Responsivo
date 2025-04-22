@@ -3,9 +3,9 @@
 const text = document.querySelector(".sec-text");
 
 const textLoad = () => {
-    setTimeout(() => {
-        text.textContent = " ENVIRONMENTAL ";
-    }, 0);
+  setTimeout(() => {
+    text.innerHTML = '<span class="env-text">ENVIRONMENTAL</span>';
+  }, 0);  
     setTimeout(() => {
         text.textContent = " DISASTER";
     }, 4000);
