@@ -1,0 +1,112 @@
+/*POPPINS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*PALAVRA RESPONSIVA SEM QUEBRA DE LINHA*/
+.main-title-B {
+    font-family: 'Poppins', sans-serif;
+    color: #ffc800;
+    letter-spacing: 5px;
+    z-index: 3;
+    white-space: normal; /* permite quebra */
+    word-break: normal;  /* NÃO quebra dentro da palavra */
+    overflow-wrap: break-word; /* quebra só entre palavras */
+    font-size: 8vw; /* Responsivo baseado na largura da tela */
+    margin: 20px 0;
+}
+
+/* Telas muito grandes (ex: desktop wide) */
+@media (min-width: 1400px) {
+    .main-title-B {
+        font-size: 100px;
+    }
+}
+
+/* Telas médias (ex: tablets) */
+@media (max-width: 768px) {
+    .main-title-B {
+        font-size: 10vw;
+        letter-spacing: 2px;
+    }
+}
+
+/* Telas pequenas (ex: celular) */
+@media (max-width: 480px) {
+    .main-title-B {
+        font-size: 12vw;
+        letter-spacing: 1px;
+    }
+}
+
+/*TEXTO ABAIXO RESPONSIVO*/
+
+.txt-titulo-desastres{
+    color: #ffc800; /* amarelo */
+    font-size: 2.5rem; /* ajustável conforme preferência */
+    text-align: center;
+    font-weight: bold;
+    font-family: poppins;
+    margin-block: 4vh;
+}
+
+.txt-perguntas {
+  font-size: 2rem; /* ajustável conforme preferência */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffc800;
+  font-family: poppins;
+}
+
+.txt-respostas {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 900px;
+  text-align: justify;
+  color: #ffffff;
+  
+}
+
+.container-intro{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+    
+}
+
+.container-desastre {
+    margin-left: 1rem; /* padrão */
+}
+
+@media (min-width: 768px) {
+    .container-desastre {
+        margin-left: 3rem; /* tablets pra cima */
+    }
+
+    .txt-titulo-desastres {
+        color: #ffc800; /* amarelo */
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        margin-block: 4vh;
+    }
+
+    .txt-respostas {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        max-width: 900px;
+        text-align: justify;
+        color: #ffffff;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-desastre {
+        margin-left: 5rem; /* telas grandes */
+    }
+}
