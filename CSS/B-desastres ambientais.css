@@ -42,11 +42,12 @@
 
 .txt-titulo-desastres{
     color: #ffc800; /* amarelo */
-    font-size: 2.5rem; /* ajustável conforme preferência */
+    font-size: 1.7rem; /* ajustável conforme preferência */
     text-align: center;
     font-weight: bold;
     font-family: poppins;
     margin-block: 4vh;
+    margin-left: 20PX;
 }
 
 .txt-perguntas {
@@ -103,10 +104,23 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .txt-titulo-desastres{
+        color: #ffc800; /* amarelo */
+        font-size: 2.4rem; /* ajustável conforme preferência */
+        text-align: center;
+        font-weight: bold;
+        font-family: poppins;
+        margin-block: 4vh;
+    }
 }
 
 @media (min-width: 1200px) {
     .container-desastre {
         margin-left: 5rem; /* telas grandes */
     }
+}
+
+.titulos-cards{
+    color: #ffc800;
 }
