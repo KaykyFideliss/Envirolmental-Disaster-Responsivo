@@ -3,21 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /*PALAVRA RESPONSIVA SEM QUEBRA DE LINHA*/
-.main-title-C {
+.main-title-B {
+    font-family: 'Poppins', sans-serif;
+    color: #ffc800;
+    letter-spacing: 5px;
+    z-index: 3;
+    white-space: normal; /* permite quebra */
+    word-break: normal;  /* NÃO quebra dentro da palavra */
+    overflow-wrap: break-word; /* quebra só entre palavras */
     font-size: 8vw; /* Responsivo baseado na largura da tela */
-  
+    margin: 20px 0;
 }
 
 /* Telas muito grandes (ex: desktop wide) */
 @media (min-width: 1400px) {
-    .main-title-C {
+    .main-title-B {
         font-size: 100px;
     }
 }
 
 /* Telas médias (ex: tablets) */
 @media (max-width: 768px) {
-    .main-title-C {
+    .main-title-B {
         font-size: 10vw;
         letter-spacing: 2px;
     }
@@ -25,8 +32,65 @@
 
 /* Telas pequenas (ex: celular) */
 @media (max-width: 480px) {
-    .main-title-C {
+    .main-title-B {
         font-size: 12vw;
         letter-spacing: 1px;
     }
+}
+
+@media (min-width: 768px) {
+    .container-desastre {
+        margin-left: 3rem; /* tablets pra cima */
+    }
+
+    .txt-titulo-desastres {
+        color: #ffc800; /* amarelo */
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        margin-block: 4vh;
+    }
+
+    .txt-respostas {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        max-width: 900px;
+        text-align: justify;
+        color: #ffffff;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .txt-titulo-desastres{
+        color: #ffc800; /* amarelo */
+        font-size: 2.4rem; /* ajustável conforme preferência */
+        text-align: center;
+        font-weight: bold;
+        font-family: poppins;
+        margin-block: 4vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-desastre {
+        margin-left: 5rem; /* telas grandes */
+    }
+}
+
+
+
+.resumo{
+    color: #ffc800;
+   
+}
+
+.txt-titulo-desmatamento{
+    color: #ffc800; /* amarelo */
+    font-size: 1.7rem; /* ajustável conforme preferência */
+    text-align: center;
+    font-weight: bold;
+    font-family: poppins;
+    margin-block: 4vh;
+    margin-left: 20PX;
 }
