@@ -15,6 +15,72 @@
     margin: 20px 0;
 }
 
+/*TEXTO ABAIXO RESPONSIVO*/
+.txt{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding: 1em;
+}
+
+/*DESING IMAGEM*/
+.img-informativo-site {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  border-radius: 2px solid #ffc800; /* borda amarela */
+  margin-block: 2vh; /* espaçamento vertical */ 
+    
+    
+}
+
+.img-fluid{
+    border-radius: 10px ; /* borda amarela */
+    border: #ffc800 solid 2px; /* borda amarela */  
+    
+    
+}
+
+/*ARTIGO RESPONSIVO*/
+.artigos, a{
+  color: #FFC700;
+  font-size: 17px;
+  font-family: poppins;
+list-style-type: none;
+line-height: 1.5;
+justify-content: center;
+display: flex;
+}
+
+.artigo-subtopico {
+  font-size: 0.9rem;
+  color: #ffc700;
+    list-style-type: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Telas muito grandes (ex: desktop wide) */
 @media (min-width: 1400px) {
     .main-title-B {
