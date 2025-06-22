@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+:root{
+
+  --amarelo: #ffc800;
+  --preto: #050506;
+  --branco: #ffffff;
+  --cinza: #525252;
+}
 /* Estilo da barra de rolagem para WebKit browsers */
 ::-webkit-scrollbar {
   background: transparent;
@@ -13,7 +20,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-background: #ffc800;
+background: var(--amarelo);
 
 }
 
@@ -25,7 +32,7 @@ background: #ffc800;
 
 body{
     overflow-x: hidden; /* Evita rolagem horizontal */
-      background-color: #050506 !important;
+      background-color: var(--preto) !important;
       align-items: center;
       justify-content: center;
       height: 100vh; /* Garante que o body ocupe a altura total da viewport */
@@ -33,7 +40,6 @@ body{
       --default-blue-stroke: #4CAF50;
       --default-grey-black-fill: #525252;
       --default-strok: rgb(141, 141, 141);
-  
   }
 
 
@@ -48,12 +54,12 @@ body{
 }
 .dropdown-item{
   font-family: poppins;
-  color: #ffc800 !important;
+  color: var(--amarelo) !important;
 }
 
  .dropdown-item:hover{
-  background-color: #ffc800 !important;
-  color: #050506 !important;
+  background-color: var(--amarelo) !important;
+  color: var(--preto) !important;
 
 }
 
@@ -70,7 +76,7 @@ body{
 }
 /*DROPDOWN PRETO */
 .navbar .dropdown-menu {
-  background-color: #050506; /* ou #050506 se quiser seguir a navbar escura */
+  background-color: var(--preto); /* ou var(--preto) se quiser seguir a navbar escura */
   color: #000;
 }
 
@@ -82,7 +88,7 @@ body{
 /*NAVBAR PRETA */
 .navbar {
   transition: background-color 0.3s ease;
-  background-color: #050506 !important;
+  background-color: var(--preto) !important;
 }
 
 
@@ -103,7 +109,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(5, 5, 6, 0.3), #050506); /* Degradê mais escuro */
+  background: linear-gradient(180deg, rgba(5, 5, 6, 0.3), var(--preto)); /* Degradê mais escuro */
   z-index: 1; /* Coloca o degradê acima da imagem */
 }
 
@@ -122,7 +128,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffc800; /* Cor amarela */
+  color: var(--amarelo); /* Cor amarela */
   text-align: center;
   z-index: 2; /* Garante que o texto esteja acima do degradê */
   cursor: default;
@@ -132,7 +138,7 @@ body{
 .main-title {
   font-size: 150px;
   font-family: 'Poppins', sans-serif;
-  color: #ffc800; /* Cor amarela */
+  color: var(--amarelo); /* Cor amarela */
   letter-spacing: 20px;
   white-space: nowrap;
   z-index: 3; /* Garantir que o texto esteja acima de todos */
@@ -143,7 +149,7 @@ body{
   z-index: 3; /* Garantir que o texto esteja acima de todos */
   font-size: 25 px;
   letter-spacing: 10px;
-  color: #ffc800; /* Cor amarela */
+  color: var(--amarelo); /* Cor amarela */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -155,7 +161,7 @@ body{
 
 section.topo-site {
   padding: 60px 0;
-  background-color: #050506; /* exemplo de fundo */
+  background-color: var(--preto); /* exemplo de fundo */
 }
 
 .txt-topo-site h1 {
@@ -247,8 +253,8 @@ section.topo-site {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #050506;
-  border-left: 2px solid #ffc800;
+  background-color: var(--preto);
+  border-left: 2px solid var(--amarelo);
   animation: animate 4s steps(12) infinite;
 }
 
@@ -274,7 +280,7 @@ section.topo-site {
 }
 
 .tittle-home {
-  color: #ffc800;
+  color: var(--amarelo);
   font-size: 40px;
   text-align: center;
   margin-bottom: 80px;
@@ -335,7 +341,7 @@ section.topo-site {
 }
 
 .text-aprenda-mais a:hover {
-  color: #ffc800;
+  color: var(--amarelo);
 }
 
 
@@ -382,7 +388,7 @@ section.topo-site {
 
 .txt-quiz {
   text-align: justify;
-  color: #050506;
+  color: var(--preto);
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-size: 20px;
@@ -390,7 +396,7 @@ section.topo-site {
 }
 
 .btn-quiz {
-  background-color: #ffc800;
+  background-color: var(--amarelo);
   color: #000000;
   padding: 0.6em 1.5em;
   text-decoration: none;
@@ -407,7 +413,7 @@ section.topo-site {
 
 .btn-quiz:hover {
   background-color: #000000;
-  color: #ffffff;
+  color: var(--branco)
 }
 
 /* Responsividade */
@@ -438,7 +444,7 @@ section.topo-site {
 /*videoaula*/
 
 .btn-videoaula {
-  background-color: #ffc800;
+  background-color: var(--amarelo);
   color: #000000;
   padding: 0.6em 1.5em;
   text-decoration: none;
@@ -453,12 +459,12 @@ section.topo-site {
 }
 
 .btn-videoaula:hover {
-  background-color: #ffffff;
+  background-color: var(--branco)
   color: #c59a00;
 }
 
 .videoaula {
-  background-color: #050506;
+  background-color: var(--preto);
   min-height: 100vh;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -497,13 +503,13 @@ section.topo-site {
 
 
 .highlight-title {
-  color: #ffc800; /* Amarelo vibrante */
+  color: var(--amarelo); /* Amarelo vibrante */
   font-weight: 700;
   font-family: poppins;
 }
 
 .btn-yellow {
-  background-color: #ffc800 !important;
+  background-color: var(--amarelo) !important;
   color: #000;
   font-weight: 600;
   border-radius: 25px;
@@ -538,6 +544,6 @@ section.topo-site {
 
 .txt-mapa{
 
-  color: #ffffff;
+  color: var(--branco)
   text-align: justify;
 }

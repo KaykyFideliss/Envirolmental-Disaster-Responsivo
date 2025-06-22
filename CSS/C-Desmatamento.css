@@ -41,27 +41,28 @@
     
     
 }
-
-/*ARTIGO RESPONSIVO*/
-.artigos, a{
+.artigos {
   color: #FFC700;
   font-size: 17px;
-  font-family: poppins;
-list-style-type: none;
-line-height: 1.5;
-justify-content: center;
-display: flex;
+  font-family: poppins, sans-serif;
+  line-height: 1.5;
+}
+
+.artigos a {
+  color: #FFC700;
+  font-size: 17px;
+  text-decoration: none;
 }
 
 .artigo-subtopico {
   font-size: 0.9rem;
   color: #ffc700;
-    list-style-type: none;
-    
 }
 
 
-
+[id] {
+  scroll-margin-top: 100px;
+}
 
 
 

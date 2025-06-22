@@ -112,8 +112,14 @@
         font-weight: bold;
         font-family: poppins;
         margin-block: 4vh;
+        align-items: left;
+        left: 10px;
     }
 }
+
+
+
+
 
 @media (min-width: 1200px) {
     .container-desastre {
