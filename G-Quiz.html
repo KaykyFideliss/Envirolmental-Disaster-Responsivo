@@ -20,88 +20,73 @@
 
 <body>
   <!--NAVBAR-->
-  <header id="header" class="nav-fixa">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
-      <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="imagens/A-HOME e LOGO/logo.png" alt="Logo" width="40">
-        </a>
-
-        <!-- Botão hamburguer: visível apenas no mobile -->
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Menu tradicional visao PC -->
-        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
-          <ul class="navbar-nav">
-            <li class="nav-item me-4">
-              <a class="nav-link" href="index.html" style="color:#ffc800; font-family:poppins;">Início</a>
-            </li>
-            <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false" style="color: #FFC700; font-family:poppins">
-                Desastres Ambientais
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuDropdown">
-                <li><a class="dropdown-item" href="C-Desmatamento.html"
-                    style="color: #FFC700 !important; font-family:poppins">Desmatamento</a></li>
-                <li><a class="dropdown-item" href="D-Queimadas.html"
-                    style="color: #FFC700; font-family:poppins">Queimadas</a></li>
-                <li><a class="dropdown-item" href="E-Recursos hídricos.html"
-                    style="color: #FFC700; font-family:poppins">Recursos Hídricos</a></li>
+       <!--NAVBAR-->
+    <header id="header" class="nav-fixa">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="imagens/A-HOME e LOGO/logo.png" alt="Logo" width="40">
+            </a>
+      
+            <!-- Botão hamburguer: visível apenas no mobile -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Menu tradicional visao PC -->
+            <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+              <ul class="navbar-nav">
+                <li class="nav-item me-4">
+                  <a class="nav-link" href="index.html" style="color:#ffc800; font-family:poppins;">Início</a>
+                </li>
+                <li class="nav-item dropdown me-4">
+                  <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #FFC700; font-family:poppins">
+                    Desastres Ambientais
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuDropdown">
+                    <li><a class="dropdown-item" href="C-Desmatamento.html" style="color: #FFC700 !important; font-family:poppins">Desmatamento</a></li>
+                    <li><a class="dropdown-item" href="D-Queimadas.html" style="color: #FFC700; font-family:poppins">Queimadas</a></li>
+                    <li><a class="dropdown-item" href="E-Recursos hídricos.html" style="color: #FFC700; font-family:poppins">Recursos Hídricos</a></li>
+                  </ul>
+                </li>
+               
+                <li class="nav-item me-4"><a class="nav-link" href="G-Quiz.html" style="color:#ffc800; font-family:poppins;">Quiz</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="H-Videoaulas.html" style="color:#ffc800; font-family:poppins;">Videoaulas</a></li>
+          
               </ul>
-            </li>
-            <li class="nav-item me-4"><a class="nav-link" href="F-Mapa.html"
-                style="color:#ffc800; font-family:poppins;">Mapa</a></li>
-            <li class="nav-item me-4"><a class="nav-link" href="G-Quiz.html"
-                style="color:#ffc800; font-family:poppins;">Quiz</a></li>
-            <li class="nav-item me-4"><a class="nav-link" href="H-Videoaulas.html"
-                style="color:#ffc800; font-family:poppins;">Videoaulas</a></li>
-            <li class="nav-item me-4"><a class="nav-link" href="I-Sobre.html"
-                style="color:#ffc800; font-family:poppins;">Sobre</a></li>
-          </ul>
-        </div>
-
-        <!-- Offcanvas para mobile -->
-        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasMenu"
-          aria-labelledby="offcanvasMenuLabel" style="background-color: #050506;">
-          <div class="offcanvas-header ">
-            <h5 class="offcanvas-title" id="offcanvasMenuLabel" style="color: #ffc800;">Envirolmental Disaster</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav text-start">
-              <li class="nav-item"><a class="nav-link" href="A-Inicio.html"
-                  style="color:#ffc800; font-family:Poppins;">Início</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="offcanvasDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffc800; font-family:poppins">
-                  Desastres Ambientais
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasDropdown">
-                  <li><a class="dropdown-item" href="C-Desmatamento.html">Desmatamento</a></li>
-                  <li><a class="dropdown-item" href="D-Queimadas.html">Queimadas</a></li>
-                  <li><a class="dropdown-item" href="E-Recursos hídricos.html">Recursos Hídricos</a></li>
+            </div>
+      
+            <!-- Offcanvas para mobile -->
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel" style="background-color: #050506;">
+              <div class="offcanvas-header " >
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel" style="color: #ffc800;">Envirolmental Disaster</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav text-start">
+                  <li class="nav-item"><a class="nav-link" href="A-Inicio.html" style="color:#ffc800; font-family:Poppins;">Início</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffc800; font-family:poppins">
+                      Desastres Ambientais
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="offcanvasDropdown">
+                      <li><a class="dropdown-item" href="C-Desmatamento.html">Desmatamento</a></li>
+                      <li><a class="dropdown-item" href="D-Queimadas.html">Queimadas</a></li>
+                      <li><a class="dropdown-item" href="E-Recursos hídricos.html">Recursos Hídricos</a></li>
+                    </ul>
+                  </li>
+                 
+                  <li class="nav-item"><a class="nav-link" href="G-Quiz.html" style="color:#ffc800; font-family:Poppins;">Quiz</a></li>
+                  <li class="nav-item"><a class="nav-link" href="H-Videoaulas.html" style="color:#ffc800; font-family:Poppins;">Videoaulas</a></li>
+                 
                 </ul>
-              </li>
-
-              <li class="nav-item"><a class="nav-link" href="G-Quiz.html"
-                  style="color:#ffc800; font-family:Poppins;">Quiz</a></li>
-              <li class="nav-item"><a class="nav-link" href="H-Videoaulas.html"
-                  style="color:#ffc800; font-family:Poppins;">Videoaulas</a></li>
-              <li class="nav-item"><a class="nav-link" href="I-Sobre.html"
-                  style="color:#ffc800; font-family:Poppins;">Sobre</a></li>
-            </ul>
+              </div>
+            </div>
+      
           </div>
-        </div>
-
-      </div>
-    </nav>
-  </header>
+        </nav>
+      </header>
 
   <!-- Escolha de tema -->
   <div class="choose-theme-screen">
@@ -184,7 +169,7 @@
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-logo">
-        <a href="A-Inicio.html"><img src="imagens/HOME-e-LOGO/logo.png" alt="Logo"></a>
+        <a href="A-Inicio.html"><img src="imagens/A-HOME e LOGO/logo.png" alt="Logo"></a>
       </div>
       <div class="footer-links">
         <h3>Acesse</h3>
