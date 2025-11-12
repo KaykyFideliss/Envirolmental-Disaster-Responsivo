@@ -66,8 +66,12 @@ body{
   background-color: transparent !important;
   transition: background-color 0.3s ease;
 
+
 }
 
+.nav-link:hover {
+  color: var(--branco) !important;
+}
 /*DROPDOWN TRANSPARENTE */
 .navbar.navbar-transparent .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.7); /* meio transparente */
