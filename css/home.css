@@ -160,6 +160,7 @@ body{
 
 .nav-fixa{
   display: block;
+  z-index: 1000;
 }
 
 section.topo-site {
@@ -549,4 +550,9 @@ section.topo-site {
 
   color: var(--branco);
   text-align: justify;
+}
+
+
+.navbar-toggler-icon {
+  filter: invert(69%) sepia(98%) saturate(749%) hue-rotate(1deg) brightness(104%) contrast(102%);
 }
